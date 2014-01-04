@@ -9,11 +9,11 @@ XUI是一个能够让你使用flash cs这样的富媒体创作工具，来制作
 
 ##视频展示
 两段视频可以展示，目前XUI的功能
-1. http://www.tudou.com/programs/view/iz10aSfMeVk/
-基本功能的展示
 
+1. http://www.tudou.com/programs/view/iz10aSfMeVk/
+   基本功能的展示
 2. http://www.tudou.com/programs/view/yWjLS2LoIh4/
-自己在网上找资源拼凑的一个简单版本天天跑酷
+   自己在网上找资源拼凑的一个简单版本天天跑酷
 
 ##XUI的构成
 XUI分两部分：
@@ -24,14 +24,12 @@ XUI分两部分：
 
 ##如何使用
 1. 可以直接使用cocos2d-html5/Test/index.html来查看cocos2d-html5版本的demo，也可以使用自己的fla，来导出试试看
-
-1.1 准备好自己的fla
-1.2 使用export工具导出
-1.3 把相应文件分别拷贝到src和res目录
-1.4 修改cocos2d.js中的appFiles
-1.5 修改main.js中的该行，为自己的变量名 var testResource = XUI.filterResource(control)
-1.6 修改testApp.js中的该行，为自己的变量名 var xui = new XUI(control);
-
+    1.1 准备好自己的fla
+    1.2 使用export工具导出
+    1.3 把相应文件分别拷贝到src和res目录
+    1.4 修改cocos2d.js中的appFiles
+    1.5 修改main.js中的该行，为自己的变量名 var testResource = XUI.filterResource(control)
+    1.6 修改testApp.js中的该行，为自己的变量名 var xui = new XUI(control);
 2. 可以直接使用cocos2d-x/projects/PVZOL/win32/pvzol.sln，来查看上面第二部分的视频demo
 
 ##关于导出工具
@@ -42,35 +40,30 @@ XUI分两部分：
 ##API介绍
 API 使用
 
-```var ctlXUI = new XUI()
+    var ctlXUI = new XUI()
     ctlXUI.load(xxx)
     
     var ctlDOM = ctlXUI.getDOM()
     
     var node = ctlXUI.getNode(xxx)
-```
 
 node除了支持API中的方法，还支持别的各种方法
 简单列举如下，具体查看XUI.js
 
-```button
+    button
+
     node.addEvent("click", function(){
     })
-```
 
 动画label帧
 如果想控制某一段帧动画，那么就加一个帧标签吧
 
-```
-node.addEvent("frame_enter", function(){})
-```
+    node.addEvent("frame_enter", function(){})
 
 dom 或者mc
 
-```
-node.startUpdate()
-node.stopUpdate()
-```
+    node.startUpdate()
+    node.stopUpdate()
 
 基于MIT协议发布
 [http://www.opensource.org/licenses/mit-license.php]
