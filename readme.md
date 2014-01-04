@@ -24,12 +24,12 @@ XUI分两部分：
 
 ##如何使用
 1. 可以直接使用cocos2d-html5/Test/index.html来查看cocos2d-html5版本的demo，也可以使用自己的fla，来导出试试看
-    1 准备好自己的fla
-    2 使用export工具导出
-    3 把相应文件分别拷贝到src和res目录
-    4 修改cocos2d.js中的appFiles
-    5 修改main.js中的该行，为自己的变量名 var testResource = XUI.filterResource(control)
-    6 修改testApp.js中的该行，为自己的变量名 var xui = new XUI(control);
+    1. 准备好自己的fla
+    2. 使用export工具导出
+    3. 把相应文件分别拷贝到src和res目录
+    4. 修改cocos2d.js中的appFiles
+    5. 修改main.js中的该行，为自己的变量名 var testResource = XUI.filterResource(control)
+    6. 修改testApp.js中的该行，为自己的变量名 var xui = new XUI(control);
 2. 可以直接使用cocos2d-x/projects/PVZOL/win32/pvzol.sln，来查看上面第二部分的视频demo
 
 ##关于导出工具
