@@ -65,6 +65,8 @@ dom 或者mc
     node.startUpdate()
     node.stopUpdate()
 
+付费支持 [https://me.alipay.com/secondsquare](https://me.alipay.com/secondsquare)
+
 基于MIT协议发布
 [http://www.opensource.org/licenses/mit-license.php]
 (http://www.opensource.org/licenses/mit-license.php)
